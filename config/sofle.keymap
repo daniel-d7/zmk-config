@@ -49,7 +49,7 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <11>;
+        chain-length = <29>;
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
