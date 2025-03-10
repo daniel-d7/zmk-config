@@ -15,11 +15,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/led/led.h>
 
-&msc {
-    time-to-max-speed-ms = <80>;
-    acceleration-exponent = <10>;
-};
-
 &nice_view_spi {
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
