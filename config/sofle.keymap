@@ -67,9 +67,9 @@
 
 / {
     behaviors {
-        scroll_behavior: scroll_behavior {
+        mscß_encoder: msc_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <1>;
+            #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>, 
                        <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
