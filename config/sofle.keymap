@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 160
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
 
 #include <behaviors.dtsi>
 
@@ -112,7 +112,7 @@
 
             sensor-bindings =
                 <&lr_encoder>,
-                <&up_encoder>;
+                <&ud_encoder>;
         };
 
         lower_layer {
