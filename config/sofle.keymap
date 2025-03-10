@@ -11,6 +11,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/led/led.h>
 
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#include <dt-bindings/zmk/pointing.h>
+
 &nice_view_spi {
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
@@ -84,8 +89,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&msc SCRL_LEFT SCRL_RIGHT>,
+                <&msc SCRL_UP SCRL_DOWN>;
         };
 
         lower_layer {
@@ -105,8 +110,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp PG_UP PG_DN>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -125,7 +130,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
     };
