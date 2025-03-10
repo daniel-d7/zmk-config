@@ -70,8 +70,8 @@
         scroll_behavior: scroll_behavior {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <1>;
-            bindings = <&msc SCROLL_DOWN>, <&msc SCROLL_UP>, 
-                       <&msc SCROLL_LEFT>, <&msc SCROLL_RIGHT>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>, 
+                       <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
     };
 
