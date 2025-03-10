@@ -85,8 +85,8 @@
             >;
 
             sensor-bindings =
-                <&inc_msc SCRL_RIGHT SCRL_LEFT>,
-                <&inc_msc SCRL_DN SCRL_UP>;
+                <&msc SCRL_RIGHT SCRL_LEFT>,
+                <&msc SCRL_DN SCRL_UP>;
         };
 
         lower_layer {
