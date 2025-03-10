@@ -66,14 +66,6 @@
 };
 
 / {
-    behaviors {
-        rot_msc: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-        };
-    };
-    
     keymap {
         compatible = "zmk,keymap";
 
@@ -93,8 +85,8 @@
             >;
 
             sensor-bindings =
-                <&rot_msc SCRL_RIGHT SCRL_LEFT>,
-                <&rot_msc SCRL_UP SCRL_DOWN>;
+                <&msc SCRL_RIGHT SCRL_LEFT>,
+                <&msc SCRL_UP SCRL_DOWN>;
         };
 
         lower_layer {
