@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 160
 
 #include <behaviors.dtsi>
 
@@ -79,7 +79,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <50>;
+            tap-ms = <40>;
         };
     };
 
@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-            tap-ms = <50>;
+            tap-ms = <40>;
         };
     };
 
