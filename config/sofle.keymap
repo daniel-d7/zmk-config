@@ -73,7 +73,7 @@
     };
 };
 
-/ {dfdf
+/ {
     behaviors {
         ud_encoder: ud_encoder {
             compatible = "zmk,behavior-sensor-rotate";
