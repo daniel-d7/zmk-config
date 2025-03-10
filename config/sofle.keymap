@@ -67,7 +67,7 @@
 
 / {
     behaviors {
-        mscß_encoder: msc_encoder {
+        msc_encoder: msc_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>, 
@@ -93,7 +93,7 @@
                  &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp SPACE    &kp RET         &mo 2  &kp RCTRL &kp MINUS  &kp EQUAL
             >;
 
-            sensor-bindings = <&scroll_behavior>;
+            sensor-bindings = <&msc_encoder>;
         };
 
         lower_layer {
