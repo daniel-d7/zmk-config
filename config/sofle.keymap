@@ -4,7 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_MOUSE_SCRL_VAL 140
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
+#define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
+#define SCRL_DOWN MOVE_Y(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
+#define SCRL_LEFT MOVE_X(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
+#define SCRL_RIGHT MOVE_X(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/pointing.h>
